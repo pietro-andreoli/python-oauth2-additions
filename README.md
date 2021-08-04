@@ -5,7 +5,7 @@ This repo tracks my custom additions to the [python-oauth2 repo by joestump](htt
 To use this signature method simply clone this repo or copy the code from p_oauth_signatures.py. Import the class `SignatureMethod_HMAC_SHA256` and replace your use of SignatureMethod_HMAC_SHA1 with it. Below is a basic example.
 
     import oauth2 as oauth
-	from p_oauth_signatures import SignatureMethod_HMAC_SHA256
+	from oauth2_extended import SignatureMethod_HMAC_SHA256
 	import requests
 	
 	token = oauth.Token(key=TOKEN_KEY, secret=TOKEN_SECRET)
